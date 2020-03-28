@@ -7,7 +7,7 @@ static int centered = 1;                    /* -c option; centers dmenu on scree
 static int min_width = 600;                    /* minimum width when centered */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"Hack:style=Bold:size=12"
+	"Fira Code Medium:style=Medium:size=13"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
@@ -17,7 +17,7 @@ static const char *colors[SchemeLast][2] = {
 	[SchemeOut] = { "#f9f5d7", "#689d6a" },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
-static unsigned int lines      = 7;
+static unsigned int lines      = 0;
 
 /*
  * Characters not considered part of a word while deleting words
